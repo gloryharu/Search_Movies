@@ -1,0 +1,84 @@
+// {
+//     "products": [
+//         {
+//             "productID": 1,
+//             "category": "Thực phẩm chức năng",
+//             "name": "Viên Uống Tăng Cường Tuần Hoàn Não Bamogin Thành Công 60 Viên",
+//             "price": 149000,
+//             "made_in":"Việt Nam",
+//             "images":
+//               "https://images.fpt.shop/unsafe/fit-in/600x600/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2020/10/00020412-bamogin-thanh-cong-6x10-2084-5f92_large.JPG",
+//             "desc": "Bamogin giúp tăng cường tuần hoàn não, cải thiện trí nhớ, tăng khả năng tập trung, giảm tình trạng căng thẳng, lo lắng, suy nhược thần kinh."
+//           },
+//           {
+//             "productID": 2,
+//             "category": "Thực phẩm chức năng",
+//             "name": "Cốm Vi Sinh Lacto Biomin Gold Hd Pharma Hỗ Trợ Điều Trị Rối Loạn Tiêu Hóa, Tiêu Chảy 5G",
+//             "price": 125000,
+//             "made_in": "Việt Nam",
+//             "images":
+//               "https://images.fpt.shop/unsafe/fit-in/600x600/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2021/04/00030511-lacto-biomin-gold-new-hdpharma-20-goi-2174-607c_large.jpg",
+//             "desc": "Cốm vi sinh Lacto Biomin Gold giúp bổ sung vi khuẩn có ích, vitamin và lysin cho cơ thể, hỗ trợ tăng cường tiêu hóa. Giúp ăn ngon và nâng cao khả năng hấp thu dưỡng chất, nâng cao sức đề kháng. Hỗ trợ cải thiện hệ vi sinh đường ruột và giúp giảm nguy cơ rối loạn tiêu hóa do loạn khuẩn đường ruột."
+//           },
+//           {
+//             "productID": 3,
+//             "category": "Thực phẩm chức năng",
+//             "name": "Viên Uống Bổ Sung Canxi Anica Phytextra Ngừa Loãng Xương, Còi Xương (Hộp 60 Viên)",
+//             "price": 517000,
+//             "made_in": "Pháp",
+//             "images":
+//               "https://images.fpt.shop/unsafe/fit-in/600x600/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2022/06/00021988-anica-phytextra-60v-7325-62ae_large.jpg",
+//             "desc": "Anica hỗ trợ phát triển chiều cao và sức khỏe tổng thể cho thanh thiếu niên, trẻ em đang phát triển và người có nhu cầu bổ sung canxi. Phòng ngừa tình trạng còi xương, loãng xương. Giảm triệu chứng viêm khớp, thoái hóa khớp."
+//           },
+//           {
+//             "productID": 4,
+//             "category": "Chăm sóc cá nhân",
+//             "name": "Nước Rửa Tay Diệt Khuẩn Dạng Gel Natural Hand Sanitizer 250Ml",
+//             "price": 49000,
+//             "made_in": "Việt Nam",
+//             "images":
+//               "https://images.fpt.shop/unsafe/fit-in/600x600/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2022/06/00032957-dung-dich-rua-tay-kho-natural-hand-sanitizer-500ml-8726-62af_large.jpg",
+//             "desc": "Gel Rửa Tay Khô Natural Hand Sanitizer là sản phẩm rửa tay khô không cần rửa lại bằng nước, giúp loại bỏ hầu hết vi khuẩn mà vẫn giữ cho đôi tay bạn luôn mềm mại dễ chịu. Ngoài ra, sản phẩm với hương thơm trà xanh và sả chanh dễ chịu, giúp khử mùi cho đôi tay hiệu quả."
+//           },
+//           {
+//             "productID": 5,
+//             "category": "Chăm sóc cá nhân",
+//             "name": "Gel Lô Hội La Beauty Giữ Ẩm, Mát Dịu Da 300Ml",
+//             "price": 99000,
+//             "made_in": "Việt Nam",
+//             "images":
+//               "https://images.fpt.shop/unsafe/fit-in/600x600/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2021/05/00030816-gel-lo-hoi-la-beauty-300ml-8537-60a7_large.JPG",
+//             "desc": "Gel Lô hội La Beauty chứa tinh chất Lô hội tự nhiên, nguyên chất và các dưỡng chất giữ ẩm an toàn, dịu nhẹ, giúp làm mát dịu da nhanh chóng, mang đến làn da tươi tắn và mềm mượt hơn."
+//           },
+//           {
+//             "productID": 6,
+//             "category": "Dụng cụ y tế",
+//             "name": "Khẩu Trang Y Tế Safefit Màu Xanh 4 Lớp 50 Cái",
+//             "price": 50000,
+//             "made_in": "Việt Nam",
+//             "images":
+//               "https://images.fpt.shop/unsafe/fit-in/600x600/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2022/05/00500207-bcs-safefit-comfortable-s52-3-cai-nhieu-chat-boi-tron-8012-6287_large.jpg",
+//             "desc": "Khẩu trang y tế Safefit là khẩu trang đạt chuẩn ISO 13485: 2026, với các lớp vải kháng khuẩn, giúp ngăn ngừa vi khuẩn và lọc bụi bẩn hiệu quả. "
+//           },
+//           {
+//             "productID": 7,
+//             "category": "Dược mỹ phẩm",
+//             "name": "Dầu Gội Hoa Bưởi La Beauty Giảm Gãy Rụng, Kích Thích Mọc Tóc 250Ml",
+//             "price": 99000,
+//             "made_in": "Việt Nam",
+//             "images":
+//               "https://images.fpt.shop/unsafe/fit-in/600x600/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2022/06/00030084-dau-goi-hoa-buoi-la-beauty-250ml-giam-gay-rung-kich-thich-moc-toc-5963-62ae_large.JPG",
+//             "desc": "Dầu gội hoa bưởi La Beauty giúp đáp ứng nhu cầu chăm sóc mái tóc hiệu quả từ tinh dầu vỏ bưởi và thảo dược, cho tóc và da đầu sạch gàu, thơm dịu nhẹ, đồng thời hạn chế rụng tóc, đem lại mái tóc dày và óng mượt. Sản phẩm là lựa chọn tuyệt vời cho da đầu, thúc đẩy sự phát triển tóc khỏe mạnh, và cũng có thể giúp làm giảm tình trạng da đầu ngứa."
+//           },
+//           {
+//             "productID": 8,
+//             "category": "Thuốc",
+//             "name": "Thuốc Calcid Soft Usa - Nic Pharma Bổ Sung Canxi Và Vitamin D (Hộp 10 Vỉ X 10 Viên)",
+//             "price": 186000,
+//             "made_in": "Việt Nam",
+//             "images":
+//               "https://images.fpt.shop/unsafe/fit-in/600x600/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2022/06/00022043-calcid-soft-usa-nic-pharma-10x10-4283-62ad_large.jpg",
+//             "desc": "Calcid Soft Usa - Nic Pharma 10X10 cung cấp Calci và Vitamin D cho cơ thể trong các trường hợp trẻ còi xương, trẻ đang phát triển, loãng xương ở người già, co giật do giảm Calci huyết, phụ nữ mang thai và cho con bú."
+//           }
+//     ]
+//   }
