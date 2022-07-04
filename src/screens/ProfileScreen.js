@@ -9,7 +9,7 @@ import {
 import React, {useState} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 import {login, login_success, logout} from '../redux_toolkit/slices/userSlice';
-import { reset_homeState } from '../redux_toolkit/slices/homeSlice';
+import {reset_homeState} from '../redux_toolkit/slices/homeSlice';
 
 const ProfileScreen = () => {
   const user = useSelector(state => state.user);
@@ -20,29 +20,29 @@ const ProfileScreen = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  const userLogin = async () => {
-    dispatch(login());
-    try {
-      const response = await fetch('http://i-web.com.vn/api/v1/auth/signin', {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          client_data: {
-            username: username,
-            password: password,
-          },
-        }),
-      });
-      const json = await response.json();
-      // console.log('LOGIN: ', json?.data);
-      dispatch(login_success(json));
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // const userLogin = async () => {
+  //   dispatch(login());
+  //   try {
+  //     const response = await fetch('http://i-web.com.vn/api/v1/auth/signin', {
+  //       method: 'POST',
+  //       headers: {
+  //         Accept: 'application/json',
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify({
+  //         client_data: {
+  //           username: username,
+  //           password: password,
+  //         },
+  //       }),
+  //     });
+  //     const json = await response.json();
+  //     // console.log('LOGIN: ', json?.data);
+  //     dispatch(login_success(json));
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
 
   return (
     <View style={styles.container}>
@@ -56,7 +56,7 @@ const ProfileScreen = () => {
               <Button
                 onPress={() => {
                   dispatch(logout());
-                  dispatch(reset_homeState())
+                  dispatch(reset_homeState());
                 }}
                 title="Logout"
               />
@@ -80,7 +80,8 @@ const ProfileScreen = () => {
               <View style={{margin: 10}}>
                 <Button
                   onPress={() =>
-                    userLogin({username: username, password: password})
+                    // userLogin({username: username, password: password})
+                    dispatch(login({username: username, password: password}))
                   }
                   title="Login"
                 />

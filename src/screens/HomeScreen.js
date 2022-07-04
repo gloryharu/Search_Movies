@@ -8,17 +8,14 @@ import {
   Image,
   TouchableOpacity,
   ActivityIndicator,
-  Alert,
   Keyboard,
 } from 'react-native';
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {
   inputText,
   search,
-  search_success,
-  search_error,
   clear_inputText,
 } from '../redux_toolkit/slices/homeSlice';
 
@@ -30,51 +27,6 @@ const HomeScreen = ({navigation}) => {
   const loading = home.loading;
   const searchText = home.searchText;
   const dispatch = useDispatch();
-
-  const TOKEN =
-    'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmNTMzMGQ0YzUyZjVhZDI4OGE5YTdlOGZkZjI4ZGJlNCIsInN1YiI6IjYyYTc0ZjNlZWIxNGZhMDlkZTA1NDc3MyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.xy1CVTzIZNID-yUThpZP9F3mO_-xx_efq3MDMDWZiPY';
-
-  const getMovies = async () => {
-    dispatch(search());
-    if (searchText === '') {
-      Alert.alert('Error', 'Please enter something to search', [
-        {
-          text: 'OK',
-          onPress: () => console.log('Đã ấn OK'),
-          style: 'cancel',
-        },
-      ]);
-      dispatch(search_error());
-    } else {
-      try {
-        const response = await fetch(
-          `https://api.themoviedb.org/3/search/movie?query=${searchText}&include_adult=false`,
-          {
-            method: 'GET',
-            headers: {
-              Accept: 'application/json',
-              'Content-Type': 'application/json',
-              Authorization: 'Bearer ' + TOKEN,
-            },
-          },
-        );
-        const json = await response.json();
-        // console.log("RESULTS: ",json.results);
-        if (json.results.length === 0) {
-          Alert.alert('Error', 'Not Found', [
-            {
-              text: 'OK',
-              onPress: () => console.log('Đã ấn OK'),
-              style: 'cancel',
-            },
-          ]);
-        }
-        dispatch(search_success(json));
-      } catch (error) {
-        console.log(error);
-      }
-    }
-  };
 
   return (
     <View style={styles.container}>
@@ -111,7 +63,8 @@ const HomeScreen = ({navigation}) => {
         <Button
           disabled={userInfo?.accessToken ? false : true}
           onPress={() => {
-            getMovies();
+            // getMovies();
+            dispatch(search())
             Keyboard.dismiss();
           }}
           title="Search"
@@ -131,7 +84,7 @@ const HomeScreen = ({navigation}) => {
           <FlatList
             data={listMovies}
             refreshing={false}
-            onRefresh={getMovies}
+            onRefresh={()=>dispatch(search())}
             renderItem={({item}) => {
               return (
                 <TouchableOpacity
